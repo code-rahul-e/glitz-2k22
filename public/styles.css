@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+:root {
+  --brown: brown;
+  --white: white;
+  --gold: #ffbc00;
+  --light-white: #cccccc;
+  --text-light: #555555;
+  --e-fest-color: #04e3ff;
+  --bg-highlight: #6e57e0;
+  --btn-bg-color: #6e57e0;
+  --btn-color: white;
+  --border-color: #909da9;
+  --light-border: #d5d5d5;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.college-name {
+  text-align: center;
+  flex: 1;
+}
+
+.college-name h4 {
+  color: var(--brown);
+}
+
+.college-name div {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+/* Invite */
+.invite {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.invite img {
+  width: 250px;
+  height: auto;
+}
+
+.invite .department {
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--btn-bg-color);
+  border-radius: 0.5rem;
+}
+
+.invite .department h2 {
+  color: var(--white);
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+
+.invite .department div {
+  font-size: 0.875rem;
+  color: var(--white);
+}
+
+.invite .department .presents {
+  margin-top: 0.25rem;
+}
+
+.invite .department .e-fest {
+  padding-top: 0.75rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--e-fest-color);
+  font-family: 'Kalam', cursive;
+}
+
+.invite .department .symposium {
+  margin-top: -0.5rem;
+  color: var(--white);
+}
+
+.invite .department .date {
+  font-weight: 600;
+  padding-top: 0.375rem;
+  font-size: 1rem;
+  color: var(--gold);
+}
+
+.register {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register .btn {
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--bg-highlight);
+  background-color: var(--white);
+  padding: 0.875rem 2rem;
+  border-radius: 0.375rem;
+  font-weight: bold;
+}
+
+/* Announcements */
+.announcements {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid var(--light-border);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.announcements .announcement {
+  background: url('./images/announcement.png') 0.5rem center no-repeat;
+  background-size: 1rem;
+  padding-left: 2rem;
+  line-height: 1.25rem;
+  color: var(--text-light);
+}
+
+.announcements .announcement span {
+  color: var(--brown);
+  font-weight: bold;
+}
+
+/* Events */
+.events {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.events .event {
+  flex: 1;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.events .event h2 {
+  font-size: 1.25rem;
+  color: var(--bg-highlight);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.events .event ul {
+  margin-left: 2rem;
+}
+
+.events .event li {
+  color: var(--text-light);
+  padding: 0.125rem 0;
+}
+
+.events .event i {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+/* Organizers */
+.organizers-wrapper {
+  margin-top: 1.25rem;
+  background-color: rgb(184, 201, 214);
+}
+
+.organizers-wrapper .container {
+  display: flex;
+  padding: 1.5rem;
+}
+
+.organizers-wrapper .coordinators {
+  flex: 1;
+  padding: 0.25rem 1.25rem;
+  border-left: 1px solid var(--border-color);
+}
+
+.organizers-wrapper .coordinators:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.organizers-wrapper .coordinators h2 {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+}
+
+.organizers-wrapper .coordinators h3 {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  padding: 0.25rem 0;
+}
+
+.organizers-wrapper .coordinators h4 {
+  font-size: 0.875rem;
+  padding: 0.125rem 0;
+}
+
+.organizers-wrapper .coordinators.students {
+  font-size: 0.875rem;
+}
+
+/* Address */
+.address-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid var(--light-border);
+  padding-top: 1.5rem;
+}
+
+.address-wrapper img {
+  width: 450px;
+  height: auto;
+}
+
+.address-wrapper .address h2 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.address-wrapper .address div {
+  font-size: 0.75rem;
+}
+
+.address-wrapper .address h3 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: var(--text-light);
+}
+
+/* Footer */
+.footer-wrapper {
+  background-color: rgba(15, 19, 19, 0.918);
+}
+
+footer.container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer .social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.25rem;
+  gap: 0.5rem;
+}
+
+footer .social {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .social img {
+  width: 26px;
+}
+
+footer .contact {
+  color: var(--light-white);
+}
+
+footer .college-details {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  color: var(--white);
+}
+
+footer .college {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer .college img {
+  width: 80px;
+}
+
+footer .college .name {
+  flex: 1;
+}
+
+footer .college .name div {
+  color: var(--light-white);
+  font-size: 0.875rem;
+}
+
+footer .copyright {
+  color: var(--light-white);
+}
+
+footer .designed-by {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 0.75rem;
+  color: var(--light-white);
+  gap: 0.375rem;
+}
+
+footer .copyright a {
+  font-size: 1rem;
+  color: var(--white);
+  font-family: 'Kalam', cursive;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  /* Header */
+  .logo {
+    gap: 0.5rem;
+  }
+
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+
+  .college-name h2 {
+    font-size: 1.125rem;
+  }
+
+  .college-name h4 {
+    font-size: 0.75rem;
+  }
+
+  .college-name div {
+    font-size: 0.625rem;
+  }
+
+  /* Invite */
+  .invite {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .invite .department {
+    background-color: var(--bg-highlight);
+    border-radius: 0.5rem;
+  }
+
+  /* Events */
+  .events {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Organizers */
+  .organizers-wrapper .container {
+    flex-direction: column;
+  }
+
+  .organizers-wrapper .coordinators {
+    padding: 1.25rem 0;
+    border-left: none;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .organizers-wrapper .coordinators:first-child {
+    border-top: none;
+  }
+
+  /* Address */
+  .address-wrapper {
+    flex-direction: column;
+  }
+
+  .address-wrapper img {
+    width: 100%;
+  }
+
+  .address-wrapper .address {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Announcements */
+  .announcements {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  footer .social-wrapper {
+    flex-direction: column;
+  }
+
+  footer .college-details {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  footer .college img {
+    width: 60px;
+    height: auto;
+  }
+
+  footer .college .name {
+    font-size: 0.875rem;
+  }
+
+  footer .college .name div {
+    font-size: 0.75rem;
+  }
+
+  footer .copyright {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+  }
+
+  footer .designed-by {
+    justify-content: center;
+  }
+}

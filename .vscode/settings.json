@@ -1,0 +1,6 @@
+{
+  "prettier.endOfLine": "lf",
+  "files.eol": "\n",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true
+}
